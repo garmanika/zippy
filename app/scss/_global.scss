@@ -24,6 +24,7 @@ li {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: inline-block;
 }
 body {
   overflow-x: hidden;
@@ -38,9 +39,9 @@ html, body {
   overflow-x:hidden;
 }
 .container {
-  // max-width: 1200px;
+  max-width: 730px;
   margin: 0 auto;
-  // padding: 0 15px;
+  padding: 0 15px;
 }
 .container-fluid {
   max-width: 100%;
@@ -53,12 +54,11 @@ html, body {
   }
 }
 .title {
-  // text-align: center;
-  // @include f700;
-  // color: $bg;
-  // line-height: 60px;
-  // font-size: 36px;
-  // margin-bottom: 30px;
+  font-family: 'Montserrat', sans-serif;
+  color: #040405;
+  font-weight: 700;
+  line-height: 40.52px;
+  text-align: center;
 }
 
 .wrapper {
