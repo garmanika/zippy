@@ -64,6 +64,7 @@
         transition: all .5s;
         &:hover{
             background-color: #ffe26d;
+            color: #62497c;
         }
     }
   }
@@ -101,11 +102,90 @@
 
 }
 .header__slider{
-  
   img{
     width: 100%;
+    height: 693px;
     
   }
 }
 // end header
+// start welcome
+.welcome{
+  background-color: #fefefe;
+  padding: 60px 0;
+  &__title{
+    margin-bottom: 55px;
+  }
+  &__umbrella{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    
+    p{
+      font-family: "Roboto-Thin";
+      font-size: 29px;
+      color: #040405;
+      max-width: 435px;
+    }
+
+  }
+  &__items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 56px;
+    border-bottom: 2px solid #e7e7e7;
+  }
+  &__item{
+    max-width: 156px;
+    &-img{
+      width: 81px;
+      height: 81px;
+      background-color: #62497c;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 33px;
+      transition: all .5s;
+      &:hover{
+        background-color: #ffe26d;
+        path{
+          fill: #62497c;
+        }
+      }
+    }
+    &-title{
+      color: #62497c;
+      @include m700;
+      font-size: 15px;
+      text-transform: uppercase;
+      margin-bottom: 27px;
+    }
+    &-info{
+      opacity: 0.5;
+      color: #040405;
+      font-family: Helvetica;
+      font-size: 13px;
+      margin-bottom: 34px;
+      
+    }
+    &-more{
+      color: #fefefe;
+      background-color: #62497c;
+      padding: 9px 20px;
+      transition: all .5s;
+      text-transform: uppercase;
+      @include m700;
+      line-height: 1.5;
+      &:hover{
+        background-color: #ffe26d;
+        color: #323232;
+      }
+    }
+  }
+}
+// end welcome
 @import "_media";

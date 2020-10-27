@@ -53,9 +53,9 @@ html, body {
   }
 }
 .title {
-  font-family: 'Montserrat', sans-serif;
   color: #040405;
-  font-weight: 700;
+  font-size: 44px;
+  @include m700;
   line-height: 40.52px;
   text-align: center;
 }
