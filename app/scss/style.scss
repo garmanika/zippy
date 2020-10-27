@@ -4,18 +4,24 @@
 
 // start header
 .header {
-  padding: 40px 0;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 700px;
   color: #ffffff;
   @include m700;
+  &__inner{
+    overflow: hidden;
+    position: absolute;
+    z-index: 10;
+    width: 90%;
+  }
   &__nav {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 135px;
+    padding-top: 40px;
     a {
       color: #ffffff;
       text-transform: uppercase;
@@ -36,7 +42,7 @@
       }
     }
   }
-  &__slider-item {
+  &__info {
     h4 {
       max-width: 470px;
       font-size: 41px;
@@ -62,14 +68,18 @@
     }
   }
   .slick-dots {
-  position: absolute;
-  bottom: 0;
+    position: absolute;
+    text-align: center;
+    display: block;
+    bottom: 32px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
     
     
 }
-.slick-dots li {
-    list-style: none;
-    
+.slick-dots li {    
     &+li{
         margin-left: 15px;
     }
@@ -87,11 +97,15 @@
     background-color: #ffffff;
     
 }
-.header__slider {
-    position: relative;
-    height: 465px;
-}
 
+
+}
+.header__slider{
+  
+  img{
+    width: 100%;
+    
+  }
 }
 // end header
 @import "_media";
