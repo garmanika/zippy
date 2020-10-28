@@ -251,4 +251,59 @@
   }
 }
 // end projects
+// start price
+.price{
+  padding-bottom: 80px;
+  &__title{
+    margin-bottom: 50px;
+  }
+  &__plans{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__plan{
+    border-right: 2px solid rgba($color: #ececec, $alpha: .5);
+    text-align: center;
+    color: #040405;
+    font-size: 15px;
+    &:last-child{
+      border-right: none;
+    }
+    &-title{
+      @include m700;
+      
+      margin-bottom: 20px;
+    }
+    &-summ{
+      opacity: 0.39;
+      &.no-free{
+        text-transform: uppercase;
+      }
+
+    }
+    &-desc{
+      display: block;
+      li{
+        display: block;
+        font-family: Helvetica;
+        font-size: 10px;
+        line-height: 22.1px;
+      }
+    }
+    &-link{
+      @include m700;
+      color: #fefefe;
+      font-size: 10px;
+      background-color: #62497c;
+      padding: 10px 30px;
+      text-transform: uppercase;
+      &:hover{
+        background-color: #ffe26d;
+        color: #323232;
+      }
+    }
+  }
+}
+// end price
 @import "_media";
