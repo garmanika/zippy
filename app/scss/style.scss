@@ -308,4 +308,41 @@
   }
 }
 // end price
+
+// start video
+.video {
+  background-color: #62497c;
+  padding: 85px 0;
+  .slick-slide {
+    margin: 0 10px;
+  }
+  &__title {
+    color: #fefefe;
+    margin-bottom: 40px;
+  }
+  &__slider {
+    .video__slide-inner {
+      min-width: 690px;
+      height: 460px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: relative;
+    }
+  }
+}
+.video__popup-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 690px;
+  height: 460px;
+  transition: all 0.3s;
+  background-color: rgba(0, 0, 0, 0);
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.68);
+  }
+}
+
+// end video
 @import "_media";

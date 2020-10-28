@@ -34,6 +34,41 @@ $(function(){
     //   },
     // ]
   });
+  $('.video__item a').fancybox({
+    caption : function( instance, item ) {
+      return $(this).parent().find('.card-text').html();
+    }
+  });
 
+    $('.video__slider').slick({
+      centerMode:!1,
+      slidesToShow:3,
+      infinite:!0,
+      speed:300,
+      centerMode:!0,
+      variableWidth:!0,
+      arrows:false,
+        responsive: [
+            {
+              breakpoint: 600,
+              settings: {
+                arrows:false,
+                dots:true,
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                dots:true,
+                arrows:false,
+                slidesToScroll: 1
+              }
+            }
+          ]
+        
+    });
   
 });
