@@ -21,8 +21,7 @@ gulp.task('sass', function () {
 gulp.task('script', function() {
   return gulp.src([
     'node_modules/slick-carousel/slick/slick.js',
-    
-    
+    'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
     'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
 
   ])
@@ -37,6 +36,7 @@ gulp.task('style', function() {
     'node_modules/slick-carousel/slick/slick.css',
     'node_modules/jquery-form-styler/dist/jquery.formstyler.css',
     'node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css',
+    'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css',
 
   ])
     .pipe(concat('libs.min.css'))
