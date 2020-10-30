@@ -359,8 +359,92 @@
         @include m700;
         font-size: 10px;
         color: #fefefe;
+        padding-bottom: 20px;
     }
 }
 
 // end video
+// start team
+.team {
+    padding: 75px 0;
+    &__items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .team__item-twitter {
+            width: 38px;
+            height: 30px;
+            margin-left: 20px;
+        }
+        .team__item-google {
+            width: 36px;
+            height: 30px;
+            margin-left: 14px;
+        }
+    }
+    &__item {
+        text-align: center;
+        font-size: 15px;
+        color: #040405;
+        margin-bottom: 60px;
+        overflow: hidden;
+        position: relative;
+        max-width: 175px;
+        width: 100%;
+        margin-right: 25px;
+        &:hover {
+            .team__item-bg {
+                display: block;
+                background-color: #725f88;
+                a {
+                    display: block;
+                    z-index: 1;
+                }
+            }
+        }
+        img {
+            width: 173px;
+            height: 173px;
+        }
+        &-title {
+            @include m700;
+            margin: 30px 0 15px;
+        }
+        &-info {
+            color: #9c9c9d;
+        }
+        &-bg {
+            display: none;
+            position: absolute;
+            height: 173px;
+            width: 173px;
+            top: 0;
+            background-color: transparent;
+            opacity: 0.7;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &__wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                top: 40%;
+                margin: 0 20px;
+            }
+            a {
+                display: none;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                width: 15px;
+                height: 31px;
+            }
+        }
+    }
+}
+
+// end team
 @import "_media";
