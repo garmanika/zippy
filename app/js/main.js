@@ -34,11 +34,7 @@ $(function() {
         //   },
         // ]
     });
-    $('.video__item a').fancybox({
-        caption: function(instance, item) {
-            return $(this).parent().find('.card-text').html();
-        }
-    });
+
 
     $('.video__slider').slick({
         centerMode: true,
@@ -69,4 +65,58 @@ $(function() {
 
     });
 
+    $('.life__slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: '<button class="slick-arrow slick-prev"><img src="images/icons/Left_Arrow.svg" alt=""></button>',
+        nextArrow: '<button class="slick-arrow slick-next"><img src="images/icons/Right_Arrow.svg" alt="правая"></button>',
+        asNavFor: '.life__slider-nav',
+        responsive: [{
+            breakpoint: 950,
+            settings: {
+                arrows: false
+            }
+        }, ]
+    });
+    $('.life__slider-nav').slick({
+        arrows: false,
+        asNavFor: '.life__slider',
+        slidesToShow: 6,
+        slidesToScroll: 6,
+        centerMode: false,
+        focusOnSelect: true,
+        centerPadding: '50px',
+        variableWidth: true,
+        infinite: true,
+        responsive: [{
+                breakpoint: 950,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    centerMode: true,
+                }
+            },
+            {
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 4
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 5
+
+                }
+            }
+        ]
+    });
+    $('.video__item a').fancybox({
+        caption: function(instance, item) {
+            return $(this).parent().find('.card-text').html();
+        }
+    });
 });

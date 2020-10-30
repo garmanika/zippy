@@ -397,6 +397,7 @@
             .team__item-bg {
                 display: block;
                 background-color: #725f88;
+                opacity: 0.7;
                 a {
                     display: block;
                     z-index: 1;
@@ -415,13 +416,12 @@
             color: #9c9c9d;
         }
         &-bg {
-            display: none;
+            opacity: 1;
             position: absolute;
             height: 173px;
             width: 173px;
             top: 0;
             background-color: transparent;
-            opacity: 0.7;
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -447,4 +447,37 @@
 }
 
 // end team
+// start life
+.life {
+    background-color: #efefef;
+    padding: 80px 0;
+    &__title {
+        margin-bottom: 40px;
+    }
+    &__slider {
+        margin-bottom: 10px;
+        &-item {
+            background-size: cover;
+            background-position: center;
+            width: 700px;
+            height: 430px;
+        }
+        &-nav {
+            max-width: 606px;
+            width: 83%;
+            margin: 0 auto;
+            position: relative;
+            &__item {
+                width: 111px !important;
+                height: 69px;
+                margin: 0 13px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+    }
+}
+
+// end life
 @import "_media";
