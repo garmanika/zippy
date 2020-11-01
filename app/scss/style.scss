@@ -9,11 +9,12 @@
   height: 700px;
   color: #ffffff;
   @include m700;
+
   &__inner {
     overflow: hidden;
     position: absolute;
     z-index: 10;
-    width: 90%;
+    width: 100%;
   }
   &__nav {
     display: flex;
@@ -21,12 +22,14 @@
     align-items: flex-end;
     margin-bottom: 135px;
     padding-top: 40px;
+    align-items: flex-start;
     a {
       color: #ffffff;
       text-transform: uppercase;
     }
     &-title {
       font-size: 29px;
+      
     }
     li {
       a {
@@ -100,6 +103,9 @@
       height: 693px;
     }
   }
+}
+.header__burger{
+  display: none;
 }
 
 // end header
@@ -451,6 +457,10 @@
 .life {
   background-color: #efefef;
   padding: 80px 0;
+  .slick-list.draggable{
+    max-width: 680px;
+    margin: 0 auto;
+  }
   &__title {
     margin-bottom: 40px;
   }
@@ -468,7 +478,7 @@
       &__item {
         width: 111px !important;
         height: 69px;
-        margin: 0 13px;
+        margin: 0 9px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -484,7 +494,10 @@
     height: 69px;
     opacity: 0.95;
     &.slick-next {
-      right: -15px;
+      right: -25px;
+    }
+    &.slick-prev{
+      left: -25px;
     }
   }
 }

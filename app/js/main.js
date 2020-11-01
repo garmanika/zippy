@@ -91,4 +91,7 @@ $(function() {
             return $(this).parent().find('.card-text').html();
         }
     });
+    $('.header__burger').on('click' , function(){
+        $('.header__list').slideToggle();
+    });
 });
