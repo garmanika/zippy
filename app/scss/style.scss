@@ -318,6 +318,27 @@
 .video {
   background-color: #62497c;
   padding: 85px 0;
+  .slick-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+    button{
+      opacity: 0;
+    }
+    li{
+       border-radius: 50%;
+    background-color: #62497c;
+    border: 1px solid #000;
+    width: 14px;
+    height: 14px;
+    margin: 0 5px;
+    &.slick-active{
+      background-color: #fff;
+    }
+    }
+   
+  }
   .slick-list {
     padding: 0;
     margin: 0;

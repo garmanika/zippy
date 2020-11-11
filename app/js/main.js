@@ -43,6 +43,7 @@ $(function() {
         speed: 300,
         variableWidth: true,
         arrows: false,
+        
         responsive: [{
                 breakpoint: 600,
                 settings: {
